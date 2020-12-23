@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
-  get "helo/index"
-  get "helo", to: "helo#index"
+  get "home/index"
+  get "home", to: "home#index"
+
+  get "inquiry/question"
+  get "inquiry", to: "inquiry#question"
 end

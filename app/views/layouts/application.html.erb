@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <div id="title">
+      <h1>インスタ映えるん</h1>
+    </div>
+
+
+    <header>
+      <div id="header_menu">
+        <ul>
+          <li>ログイン</li>
+          <li>登録</li>
+          <li>アカウント</li>
+          <li>お問い合わせ</li>
+        </ul>
+    </div>
+    </header>
+
     <title>Insta</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag "application", media: "all", 'data-turbolinks-track': "reload" %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track': "reload" %>
   </head>
 
   <body>
