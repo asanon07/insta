@@ -13,4 +13,7 @@ Rails.application.routes.draw do
 
   get "registration/registration_form"
   get "registration", to: "registration#registration_form"
+
+  get "details/slide_details"
+  get "details", to: "details#slide_details"
 end
