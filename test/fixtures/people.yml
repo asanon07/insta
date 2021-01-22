@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  authority: 1
+  registration_date: MyText
+  registration_quantity: MyText
+  login_date: MyText
+  user_id: 1
+
+two:
+  name: MyText
+  authority: 1
+  registration_date: MyText
+  registration_quantity: MyText
+  login_date: MyText
+  user_id: 1
