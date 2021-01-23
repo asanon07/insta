@@ -59,3 +59,6 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # add jQuery
 gem "jquery-rails"
+
+# add carriewave
+gem "carrierwave"
