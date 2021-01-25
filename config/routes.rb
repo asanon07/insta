@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get "/posts", to: "posts#show"
+  post "/posts/create", to: "posts#create"
+
   get "people/index"
   get "people", to: "people#index"
 
