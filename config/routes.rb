@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get "/locations", to: "locations#show"
+  post "/locations/create", to: "locations#create"
+
   get "people/index"
   get "people", to: "people#index"
 

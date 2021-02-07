@@ -1,0 +1,12 @@
+<% @locations.each do |location| %>
+  <p>
+    <%= location.name %><br>
+    <%= image_tag location.photo.url %>
+  </p>
+<% end %>
+<hr>
+<%= form_for :location, url: "locations/create" do |f| %>
+  <p><%= f.label "投稿者" %><br><%= f.text_field :name, placeholder: "ハンドルネーム" %></p>
+  <p><%= f.label "画像をアップロード" %><br><%= f.file_field :photo %></p>
+  <p><%= f.submit value: "投稿" %></p>
+<% end %>
