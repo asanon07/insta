@@ -4,8 +4,8 @@ class CreateLocations < ActiveRecord::Migration[5.2]
       t.text :name
       t.text :municipalities
       t.text :address
-      t.integer :class
-      t.blob :photo
+      t.integer :division
+      t.string :photo
       t.text :registration_date
       t.integer :user_id
 

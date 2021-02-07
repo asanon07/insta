@@ -4,8 +4,8 @@ one:
   name: MyText
   municipalities: MyText
   address: MyText
-  class: 1
-  photo: 
+  division: 1
+  photo: MyString
   registration_date: MyText
   user_id: 1
 
@@ -13,7 +13,7 @@ two:
   name: MyText
   municipalities: MyText
   address: MyText
-  class: 1
-  photo: 
+  division: 1
+  photo: MyString
   registration_date: MyText
   user_id: 1
