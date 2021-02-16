@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
+  get "/photo_details/show"
+  get "/photo_details", to: "photo_details#show"
+
   get "/locations", to: "locations#show"
+  #get "/locations", to: "locations#create"
   post "/locations/create", to: "locations#create"
 
   get "people/index"

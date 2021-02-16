@@ -13,5 +13,6 @@ class LocationsController < ApplicationController
 
   def permit_params
     params.require(:location).permit(:name, :photo)
+    #params.permit(:name, :photo)
   end
 end
