@@ -6,7 +6,11 @@
 <% end %>
 <hr>
 <%= form_for :location, url: "locations/create" do |f| %>
-  <p><%= f.label "投稿者" %><br><%= f.text_field :name, placeholder: "ハンドルネーム" %></p>
+  <p><%= f.label "タイトル" %><br><%= f.text_field :name %></p>
+  <p><%= f.label "県" %><br><%= f.text_field :prefecture %></p>
+  <p><%= f.label "市町村" %><br><%= f.text_field :municipalities %></p>
+  <p><%= f.label "番地丁目" %><br><%= f.text_field :address %></p>
+  <p><%= f.label "インスタ区分" %><br><%= f.text_field :division %></p>
   <p><%= f.label "画像をアップロード" %><br><%= f.file_field :photo %></p>
   <p><%= f.label "説明文" %><br> <%= f.text_area :photo_description %></p>
   <p><%= f.submit value: "投稿" %></p>
