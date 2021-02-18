@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 2021_02_08_193758) do
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "photo_description"
   end
 
   create_table "people", force: :cascade do |t|

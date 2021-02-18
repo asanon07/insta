@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get "/photo_list/show"
+  get "/photo_list", to: "photo_list#show"
+
   get "/photo_details/show"
   get "/photo_details", to: "photo_details#show"
 
