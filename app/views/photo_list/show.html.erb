@@ -1,9 +1,11 @@
-<h1>投稿一覧</h1>
+<h1>投稿一覧リスト</h1>
 
 <% @locations.each do |location| %>
   <p>
     <%= location.name %><br>
-    <%= image_tag location.photo.url, width: "80%", height: "80%" %>
+    <% #= image_tag location.photo.url, width: "80%", height: "80%" %>
+    <%= link_to image_tag(location.photo.url width: "80%", height: "80%"), "/photo_details/#{location.id}" %>
+
   </p>
 <% end %>
 <hr>
