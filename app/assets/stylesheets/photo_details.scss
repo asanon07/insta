@@ -2,11 +2,46 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-left-content {
-    float:left;
+.container {
+    display: grid;
+    grid-template-rows: 140px 280px 300px;
+    grid-template-columns: 1100px 800px;
+    margin : 30px ;
 }
 
-right-content {
-    float:right;
+.col-left1{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    font-size: 54px;
+    color:green;
+    //background-color: chartreuse;
 }
 
+.col-left2 {
+    grid-row: 2 / span 4;
+    grid-column: 1 / 2;
+    //background-color: coral;
+
+}
+
+.col-right1 {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    color:black;
+    //background-color: blueviolet;
+}
+
+.col-right2 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    color:black;
+    //background-color: chartreuse;
+}
+
+.col-right3 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    color:black;
+    //background-color:aqua;
+
+}
