@@ -1,7 +1,26 @@
-<h1>投稿一覧詳細</h1>
 
-  <p class="left-content"><%= image_tag(@location.photo.url) %></p>
+<div class="container">
+  <div class="col-left1">
+    <p><%= @location.name %></p>
+  </div>
 
-  <p class="right-content"><%= @location.prefecture %></p>
+  <div class="col-left2">
+    <p><%= image_tag(@location.photo.url) %></p>
+  </div>
+
+  <div class="col-right1">
+    <h2>住所</h2>
+    <p><%= @location.prefecture %><%= @location.municipalities %><%= @location.address %></p>
+  </div>
+
+  <div class="col-right2">
+    <h2>説明文</h2>
+    <p><%= @location.photo_description %></p>
+  </div>
+
+  <div class="col-right3">
+    
+  </div>
+</div>
+
 <hr>
-
