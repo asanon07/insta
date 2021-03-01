@@ -1,18 +1,16 @@
 Rails.application.routes.draw do
-  #get "/photo_list/:id" => "posts#show"
+  get "people/add"
+  post "people/add", to: "people#create"
+  get "people/index"
+  get "people", to: "people#index"
+
   get "/photo_list/show"
   get "/photo_list", to: "photo_list#show"
 
   get "/photo_details/:id" => "photo_details#show"
-  #get "/photo_details/show"
-  #get "/photo_details", to: "photo_details#show"
 
   get "/locations", to: "locations#show"
-  #get "/locations", to: "locations#create"
   post "/locations/create", to: "locations#create"
-
-  get "people/index"
-  get "people", to: "people#index"
 
   get "home/index"
   get "home", to: "home#index"
