@@ -15,19 +15,15 @@
         <th>email</th>
             <td><%= form.text_field :email, :size => "30" %></td>
     </tr>
-
-    
-
+    <tr>
+        <th>password</th>
+            <td><%= form.text_field :password_digest, :size => "30" %></td>
+    </tr>
         <%= form.submit "登録", class: "button" %>
-
     <% end %>
 
 </table>
 
-<br>
-<br>
-<br>
-<hr>
 
 </div>
 
