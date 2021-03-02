@@ -4,7 +4,7 @@ ja:
       person: パーソン
     attributes:
       person:
-        name: "名前"
-        age: "年齢"
-        email: "メールアドレス"
+        name: 名前
+        age: 年齢
+        email: メールアドレス
         password: パスワード
