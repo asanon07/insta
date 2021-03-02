@@ -5,21 +5,25 @@
 
 <table>
     <tr>
+        <th>user_id</th>
         <th>name</th>
+        <th>age</th>
+        <th>email</th>     
         <th>authority</th>
-        <th>registration_data</th>
         <th>registration_quantity</th>
         <th>login_data</th>
-        <th>user_id</th>
+        <th>password</th>
     </tr>
     <% @data.each do |obj| %>
     <tr>
+        <td><%= obj.user_id %></td>
         <td><%= obj.name %></td>
+        <td><%= obj.age %></td>
+        <td><%= obj.email %></td>
         <td><%= obj.authority %></td>
-        <td><%= obj.registration_date %></td>
         <td><%= obj.registration_quantity %></td>
         <td><%= obj.login_date %></td>
-        <td><%= obj.user_id %></td>
+        <td><%= obj.password %></td>
     </tr>
 
     <% end %>

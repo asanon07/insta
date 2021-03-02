@@ -1,5 +1,5 @@
 <h1>ユーザ登録</h1>
-
+<p class="error_message"><%= @msg %></p>
 <div class="form1">
 <table>
     <%= form_for(@person, url: { controller: "people", action: "create" }) do |form| %>
@@ -17,14 +17,10 @@
     </tr>
     <tr>
         <th>password</th>
-            <td><%= form.text_field :password_digest, :size => "30" %></td>
+            <td><%= form.text_field :password, :size => "30" %></td>
     </tr>
         <%= form.submit "登録", class: "button" %>
     <% end %>
 
 </table>
-
-
 </div>
-
-<p>aa</p>

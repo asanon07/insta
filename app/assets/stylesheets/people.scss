@@ -2,9 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
 body {
     margin-bottom: 300px;
+}
+
+.error_message {
+    font-size: 30pt;
+    text-align:center;
+    padding:20px 0;
 }
 
 h1 {
@@ -18,6 +23,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 table tr th {
@@ -37,14 +43,8 @@ table tr td {
 }
 
 input[type="text"] {
-    //width: 300px;
-    //height: 40px;
     margin: 30px;
     font-size: 30px;
-}
-
-table {
-    position: relative;
 }
 
 .button {
@@ -57,7 +57,7 @@ table {
     font-size: 5.4em;
     font-weight: bold;
     position:absolute;
-    top: 1670px;
+    top: 500px;
 }
 
 .button:hover {
