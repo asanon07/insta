@@ -1,4 +1,6 @@
 class Person < ApplicationRecord
+  has_secure_password(validations: false)
+
   validates :name, presence: true
 
   validates :age, presence: { message: "を入力してください" }

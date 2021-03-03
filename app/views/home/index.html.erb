@@ -1,1 +1,7 @@
 
+<h1>home画面</h1>
+<% if logged_in? %>
+  <%= render "home/logged_in" %>
+<% else %>
+  <%= render "home/not_logged_in" %>
+<% end %>

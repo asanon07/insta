@@ -2,16 +2,18 @@
 
 one:
   name: MyText
+  age: 1
+  email: MyText
   authority: 1
-  registration_date: MyText
-  registration_quantity: MyText
+  registration_quantity: 1
   login_date: MyText
-  user_id: 1
+  password_digest: MyText
 
 two:
   name: MyText
+  age: 1
+  email: MyText
   authority: 1
-  registration_date: MyText
-  registration_quantity: MyText
+  registration_quantity: 1
   login_date: MyText
-  user_id: 1
+  password_digest: MyText

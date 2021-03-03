@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_08_193758) do
+ActiveRecord::Schema.define(version: 2021_03_03_224055) do
 
   create_table "locations", force: :cascade do |t|
     t.text "name"
@@ -23,15 +23,18 @@ ActiveRecord::Schema.define(version: 2021_02_08_193758) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.text "photo_description"
+    t.text "prefecture"
+    t.text "email"
   end
 
   create_table "people", force: :cascade do |t|
     t.text "name"
+    t.integer "age"
+    t.text "email"
     t.integer "authority"
-    t.decimal "registration_date"
-    t.decimal "registration_quantity"
-    t.decimal "login_date"
-    t.integer "user_id"
+    t.integer "registration_quantity"
+    t.text "login_date"
+    t.text "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
