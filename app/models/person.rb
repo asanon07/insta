@@ -8,6 +8,6 @@ class Person < ApplicationRecord
   validates :email, presence: { message: "を入力してください" }
   validates :email, uniqueness: true
 
-  validates :password, presence: { message: "を入力してください" }
-  validates :password, uniqueness: true
+  validates :password_digest, presence: { message: "を入力してください" }
+  validates :password_digest, uniqueness: true
 end

@@ -7,7 +7,7 @@ ja:
         name: 名前
         age: 年齢
         email: メールアドレス
-        password: パスワード
+        password_digest: パスワード
     errors:
       messages:
         record_invalid: 'バリデーションに失敗しました: %{errors}'
