@@ -16,7 +16,7 @@ class PeopleController < ApplicationController
       re = ""
       @person.errors.messages.each do |key, vals|
         vals.each do |val|
-          re += '<span style="color:red">' + key.to_s +
+          re += '<span style="color:red">' + Person.human_attribute_name(key).to_s +
                 "</span> " + val + "<br>"
         end
       end
