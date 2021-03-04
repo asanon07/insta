@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   private
 
   # ログイン済みユーザーかどうか確認
-  def logged_in_user
+  def logged_in_people
     unless logged_in?
       redirect_to login_url
     end

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root "home#index"
+
   get "sessions/new"
 
   get "/login", to: "sessions#new"
