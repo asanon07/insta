@@ -8,7 +8,6 @@ module SessionsHelper
   # 現在ログイン中のユーザーを返す (いる場合)
   def current_people
     if session[:people_id]
-      #@current_user = @current_user || User.find_by(id: session[:user_id])と同じ意味
       @current_people ||= Person.find_by(id: session[:people_id])
     end
   end
