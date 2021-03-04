@@ -9,6 +9,7 @@ class Person < ApplicationRecord
 
   validates :email, presence: { message: "を入力してください" }
   validates :email, uniqueness: true
+  validates :email, format: { with: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i }
 
   validates :password_digest, presence: { message: "を入力してください" }
   validates :password_digest, uniqueness: true
