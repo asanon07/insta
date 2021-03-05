@@ -17,8 +17,7 @@
     </tr>
     <tr>
         <th>password</th>
-            <%= form.label :password %><br />
-            <td><%= form.password_field :password, :size => "30" %></td>
+            <td><%= form.text_field :password, :size => "30" %></td>
     </tr>
         <%= form.submit "登録", class: "button" %>
     <% end %>

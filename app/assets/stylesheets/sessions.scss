@@ -1,3 +1,91 @@
 // Place all the styles related to the Sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.connect-login {
+	width: 100%;
+	//margin: 40px 3%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connect-login input[type='email'] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 300px;
+	height: 40px;
+	padding: 0.3em;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: #aaaaaa;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+}
+.ef input[type='email']:focus {
+	border: 1px solid #da3c41;
+	outline: none;
+	box-shadow: 0 0 5px 1px rgba(218,60,65, .5);
+}
+
+.connect-login input[type='password'] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 300px;
+	height: 40px;
+	padding: 0.3em;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: #aaaaaa;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+}
+.ef input[type='password']:focus {
+	border: 1px solid #da3c41;
+	outline: none;
+	box-shadow: 0 0 5px 1px rgba(218,60,65, .5);
+}
+
+
+
+ul li {
+	font-size: 40px;
+    list-style: none;
+	margin-top: 10px;
+}
+
+.btnWrap {
+	text-align: center;
+}
+
+.btn {
+    width: 300px;
+    padding:10px;
+    background: #b8acbb;
+    color: rgb(250, 248, 248);
+    border-bottom: 5px solid rgb(24, 18, 26);
+    font-size: 3.4em;
+    font-weight: bold;
+}
+
+.btn:hover {
+    margin-top: 3px;
+    color: rgb(250, 248, 248);
+    background: #433946;
+    border-bottom: 2px solid rgb(11, 6, 12);
+}
+
+form dl dt{
+	width: 165px;
+	padding:10px 0;
+	float:left;
+	clear:both;
+	font-size: 40px;
+    list-style: none;
+	margin-top: 10px;
+  }
+  
+form dl dd{
+	padding:10px 0;
+}
