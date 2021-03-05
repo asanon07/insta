@@ -8,6 +8,7 @@ class SessionsController < ApplicationController
       log_in people
       redirect_to root_url
     else
+      flash[:notice] = "メールアドレスもしくはパスワードが正しくありません"
       render "new"
     end
   end
