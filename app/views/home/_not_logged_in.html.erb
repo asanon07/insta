@@ -1,2 +1,7 @@
-<h1>home画面not_logged-in</h1>
-<%= link_to "ログイン", login_path %>
+<h1>ログインしてください</h1>
+
+    <div class="button_wrapper">
+        <%= link_to(login_path) do %>
+            <button class="login-button" >ログイン</button>
+        <% end %>
+    </div>

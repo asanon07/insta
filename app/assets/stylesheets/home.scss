@@ -25,13 +25,12 @@
 header{
     margin: 10px 0px 10px;
     z-index: 10;
-    height: 64px;
+    height: 110px;
     position: absolute;
     top: 200px;
     background-color: #333;
     width: 100%;
     text-align: center;
-    z-index: 2;
   }
 
 #header_menu ul {
@@ -43,7 +42,7 @@ header{
 
 #header_menu ul li {
     display: inline-block;
-    padding: 26px 10px 20px 10px;
+    padding: 20px 10px 20px 10px;
     color: rgb(255, 255, 255);
 }
 
@@ -51,3 +50,56 @@ header{
     color:honeydew;
     text-decoration: none;
 }
+
+.login-button { 
+    display: inline-block;
+    padding: 1em 2em;
+    font-size: 60px;
+    text-decoration: none;
+    background: #290ec4;/*ボタン色*/
+    color: #acc0eb;/*ボタン色より暗く*/
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    border-bottom: solid 3px #627295;
+    border-radius: 3px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.login-button:active {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+}
+
+.logout-button { 
+    display: inline-block;
+    padding: 1em 2em;
+    font-size: 60px;
+    text-decoration: none;
+    background: #290ec4;/*ボタン色*/
+    color: #acc0eb;/*ボタン色より暗く*/
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    border-bottom: solid 3px #627295;
+    border-radius: 3px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.logout-button:active {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+}
+
+.button_wrapper {
+    text-align:center;
+ }
+
+.login-form {
+	position: relative;
+	width: 80%;
+	margin: 40px 3%;
+ }
+
