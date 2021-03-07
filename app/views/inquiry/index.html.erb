@@ -6,8 +6,7 @@
   <div class="newContent">
     <%= form_for @inquiry, :url => inquiry_confirm_path do |f| %>
       <% if @inquiry.errors.any? %>
-        <div class="alert alert-danger" role="alert">
-          <strong>入力内容にエラーがあります</strong>
+        <div class="alert-danger" role="alert">
           <ul>
             <% @inquiry.errors.each do |attr, msg| %>
               <li><%= msg %></li>
@@ -15,15 +14,18 @@
           </ul>
         </div>
       <% end %>
-      <div class="row">
-        <div class="col-sm-4">名前<span class="text-danger">（必須）</span></div>
-        <div class="col-sm-8"><%= f.text_field :name, class: "form-control mb-2" %></div>
-        <div class="col-sm-4">メールアドレス<span class="text-danger">（必須）</span></div>
-        <div class="col-sm-8"><%= f.text_field :email, class: "form-control mb-2" %></div>
-        <div class="col-sm-4">お問い合わせ内容</div>
-        <div class="col-sm-8"><%= f.text_area :message, class: "form-control mb-2", rows: "6" %></div>
+      <div class="inquiry-form">
+        <div class="form-text">名前<span class="text-danger">（必須）</span></div>
+        <%= f.text_field :name, class: "inquiry-input-information" %>
+        <div class="form-text">メールアドレス<span class="text-danger">（必須）</span></div>
+        <%= f.text_field :email, class: "inquiry-input-information" %>
+        <div class="form-text">お問い合わせ内容</div>
+        <%= f.text_area :message, size: "50x10", class: "inquiry-contents" %>
       </div>
-      <%= f.submit "確認", class: "btn btn-block btn-success" %>
+      <div class="button_wrapper">
+        <%= f.submit "確認", class: "btn btn-block btn-success" %>
+      </div>
+
     <% end %>
   </div>
 </div>

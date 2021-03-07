@@ -1,3 +1,47 @@
 // Place all the styles related to the inquiry controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.inquiry-form {
+    text-align: center;
+}
+
+.form-text {
+    font-size: 40px;
+}
+
+.btn btn-block btn-success {
+    text-align: center;
+}
+
+.button_wrapper {
+    text-align:center;
+    margin-top: 20px;
+}
+
+.inquiry-contents {
+    font-size: 30px;
+}
+
+.alert-danger {
+    text-align: center;
+    color:red;
+}
+
+.inquiry-input-information {
+    width: 700px;
+}
+
+.confirm-contents {
+    text-align: center;
+}
+
+.confirm-items {
+    font-size: 50px;
+}
+
+
+.thanks-message {
+    text-align: center;
+    font-size: 50px;
+}
