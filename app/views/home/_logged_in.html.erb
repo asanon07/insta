@@ -1,6 +1,25 @@
 
-    <div class="button_wrapper">
-        <%= link_to(logout_path, method: :delete) do %>
-            <button class="logout-button" >ログアウト</button>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+
+
+<div class="flex">
+
+    <div class="to-photo_list-button-wrapper">
+        <%= button_to photo_list_path, method: :get, class: "to-photo_list-button" do %>
+            <i class="fa fa-caret-right"></i> 投稿画像一覧へ
         <% end %>
     </div>
+
+    <div class="to-locations-button-wrapper">
+        <%= button_to locations_path, method: :get, class: "to-locations-button" do %>
+            <i class="fa fa-caret-right"></i> 新規投稿
+        <% end %>
+    </div>
+</div>
+
+
+<div class="button_wrapper">
+    <%= link_to(logout_path, method: :delete) do %>
+        <button class="logout-button" >ログアウト</button>
+    <% end %>
+</div>

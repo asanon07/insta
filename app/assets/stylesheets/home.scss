@@ -74,8 +74,8 @@ header{
 
 .logout-button { 
     display: inline-block;
-    padding: 1em 2em;
-    font-size: 60px;
+    padding: 0.8em 1.6em;
+    font-size: 40px;
     text-decoration: none;
     background: #290ec4;/*ボタン色*/
     color: #acc0eb;/*ボタン色より暗く*/
@@ -84,6 +84,7 @@ header{
     border-radius: 3px;
     font-weight: bold;
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+    margin-top: 130px;
 }
 
 .logout-button:active {
@@ -103,3 +104,53 @@ header{
 	margin: 40px 3%;
  }
 
+.to-photo_list-button {
+    font-size: 60px;
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #00BCD4;
+    background: #ECECEC;
+    transition: .4s;
+}
+
+.to-photo_list-button:hover {
+    background: #00bcd4;
+    color: white;
+    cursor:pointer;
+}
+
+.to-photo_list-button-wrapper {
+    text-align: center;
+}
+
+.to-locations-button {
+    font-size: 60px;
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #00BCD4;
+    background: #ECECEC;
+    transition: .4s;
+}
+
+.to-locations-button:hover {
+    background: #00bcd4;
+    color: white;
+    cursor:pointer;
+}
+
+.to-locations-button-wrapper {
+    text-align: center;
+}
+
+.flex {
+    padding: 2.5% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
