@@ -10,12 +10,16 @@
 
   <div class="col-right1">
     <h2>住所</h2>
-    <p><%= @location.prefecture %><%= @location.municipalities %><%= @location.address %></p>
+    <div class="address-text">
+      <p><%= @location.prefecture %><%= @location.municipalities %><%= @location.address %></p>
+    </div>
   </div>
 
   <div class="col-right2">
     <h2>説明文</h2>
-    <p><%= @location.photo_description %></p>
+    <div class="description-text">
+      <p><%= @location.photo_description %></p>
+    </div>
   </div>
 
   <div class="col-right3">
