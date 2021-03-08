@@ -1,7 +1,15 @@
-<h1>ログインしてください</h1>
 
-    <div class="button_wrapper">
-        <%= link_to(login_path) do %>
-            <button class="login-button" >ログイン</button>
+<div class="flex">
+
+    <div class="to-photo_list-button-wrapper">
+        <%= button_to photo_list_path, method: :get, class: "to-photo_list-button" do %>
+            <i class="fa fa-caret-right"></i> 投稿画像一覧へ
         <% end %>
     </div>
+
+    <div class="to-locations-button-wrapper">
+        <%= button_to locations_path, method: :get, class: "to-locations-button" do %>
+            <i class="fa fa-caret-right"></i> 新規投稿
+        <% end %>
+    </div>
+</div>
