@@ -6,7 +6,7 @@
   <ul>
     <li>
       <% @locations.each do |location| %>
-      <%= link_to image_tag(location.photo.url, width: "1300px", height: "1300px"), "/photo_details/#{location.id}" %>
+      <%= link_to image_tag(location.photo.url, width: "800px", height: "600px"), "/photo_details/#{location.id}" %>
       <% end %>
     </li>
   </ul>
