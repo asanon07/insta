@@ -25,6 +25,7 @@ Rails.application.routes.draw do
   get "/photo_details/:id" => "photo_details#show"
 
   get "/locations", to: "locations#show"
+  get "locations/thanks"
   post "/locations/create", to: "locations#create"
 
   get "home/index"

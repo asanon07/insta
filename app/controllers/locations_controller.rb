@@ -6,7 +6,12 @@ class LocationsController < ApplicationController
   def create
     @location = Location.new(permit_params)
     @location.save!
-    redirect_to action: "show"
+    redirect_to action: "thanks"
+  end
+
+  def thanks
+    # 完了画面を表示
+    render :action => "thanks"
   end
 
   private

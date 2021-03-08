@@ -29,3 +29,54 @@ textarea {
     color         : #000066;     /* 背景色     */
     background    : #ffffff;     /* 文字色     */
   }
+
+  .to-photo_list-button {
+    font-size: 60px;
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #d46318;
+    background: #ECECEC;
+    transition: .4s;
+}
+
+.to-photo_list-button:hover {
+    background: #d46318;
+    color: white;
+    cursor:pointer;
+}
+
+.to-photo_list-button-wrapper {
+    text-align: center;
+}
+
+.to-locations-button {
+    font-size: 60px;
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #d46318;
+    background: #ECECEC;
+    transition: .4s;
+}
+
+.to-locations-button:hover {
+    background: #d46318;
+    color: white;
+    cursor:pointer;
+}
+
+.to-locations-button-wrapper {
+    text-align: center;
+}
+
+.flex {
+    padding: 2.5% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
