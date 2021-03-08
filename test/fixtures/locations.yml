@@ -2,18 +2,20 @@
 
 one:
   name: MyText
+  prefecture: MyText
   municipalities: MyText
   address: MyText
   division: 1
   photo: MyString
-  registration_date: MyText
+  photo_description: MyText
   user_id: 1
 
 two:
   name: MyText
+  prefecture: MyText
   municipalities: MyText
   address: MyText
   division: 1
   photo: MyString
-  registration_date: MyText
+  photo_description: MyText
   user_id: 1
