@@ -1,9 +1,5 @@
 
-<% @locations.each do |location| %>
-  <p>
-    <%= location.name %><br>
-  </p>
-<% end %>
+
 <hr>
 
 <div class="form">
@@ -18,7 +14,6 @@
     <p><%= f.label :photo, "画像をアップロード", class: "id_image" %>
     
     <span><%= f.file_field :photo %></span></p>
-    
     
     <p><%= f.label "説明文" %><br> <%= f.text_area :photo_description %></p>
     <p><%= f.submit value: "投稿", :class => "submit-button" %></p>
