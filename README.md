@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+■概要  
+インスタ映えするスポットを自由に投稿、閲覧できるWebアプリです.
 
-Things you may want to cover:
+■機能一覧
+* ログイン機能
+* ユーザ登録機能
+* 画像投稿機能
+* 投稿画像一覧表示機能
+* 投稿画像詳細情報表示機能
+* お問合せ機能
 
-* Ruby version
+■　使用技術
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* ruby 2.7.2
+* rails 5.2.4.4
+* DB SQLite 3.34.0
+* スライドショー:skipper
+* 画像加工 ImageMagick 7.0.11-Q16-HDRI, Rmagick 4.2.2
+* 画像アップロード CarrierWave 2.1.0
