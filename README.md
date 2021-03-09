@@ -19,3 +19,4 @@
 * スライドショー:skipper
 * 画像加工 ImageMagick 7.0.11-Q16-HDRI, Rmagick 4.2.2
 * 画像アップロード CarrierWave 2.1.0
+* 単体、結合テスト RSpec 3.10
