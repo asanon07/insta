@@ -60,7 +60,7 @@ group :test do
 
   # add new gem
   gem "webdrivers", "~> 3.0"
-  gem "capybara", ">= 2.15"
+  gem "capybara"
   gem "rspec-rails"
   gem "factory_bot_rails"
   gem "faker"
