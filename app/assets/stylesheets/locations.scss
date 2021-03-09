@@ -30,7 +30,7 @@ textarea {
     background    : #ffffff;     /* 文字色     */
   }
 
-  .to-photo_list-button {
+  .to-photo_list-button-in-location {
     font-size: 60px;
     position: relative;
     display: inline-block;
@@ -42,7 +42,7 @@ textarea {
     transition: .4s;
 }
 
-.to-photo_list-button:hover {
+.to-photo_list-button-in-location:hover {
     background: #d46318;
     color: white;
     cursor:pointer;
@@ -52,7 +52,7 @@ textarea {
     text-align: center;
 }
 
-.to-locations-button {
+.to-locations-button-in-location {
     font-size: 60px;
     position: relative;
     display: inline-block;
@@ -64,7 +64,7 @@ textarea {
     transition: .4s;
 }
 
-.to-locations-button:hover {
+.to-locations-button-in-location:hover {
     background: #d46318;
     color: white;
     cursor:pointer;
