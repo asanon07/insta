@@ -4,6 +4,7 @@ class Person < ApplicationRecord
 
   validates :name, presence: true
 
+  validates :age, presence: true
   validates :age, presence: { message: "を入力してください" }
   validates :age, length: { maximum: 3 }
   validates :age, numericality: true
