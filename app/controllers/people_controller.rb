@@ -11,7 +11,7 @@ class PeopleController < ApplicationController
   def create
     @person = Person.new person_params
     if @person.save
-      redirect_to "/people"
+      redirect_to action: "thanks"
     else
       re = ""
       @person.errors.messages.each do |key, vals|
@@ -27,6 +27,10 @@ class PeopleController < ApplicationController
     if request.post?
       Person.create(person_params)
     end
+  end
+
+  def thanks
+    render :action => "thanks"
   end
 
   private
