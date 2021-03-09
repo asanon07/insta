@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   post "people/add", to: "people#create"
   get "people/index"
   get "people", to: "people#index"
+  get "people/thanks"
 
   get "/photo_list/show"
   get "/photo_list", to: "photo_list#show"

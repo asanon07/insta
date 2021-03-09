@@ -66,3 +66,54 @@ input[type="text"] {
     background: #a80fc7;
     border-bottom: 2px solid rgb(99, 10, 117);
 }
+
+.to-photo_list-button-in-people {
+    font-size: 60px;
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #27df30;
+    background: #ECECEC;
+    transition: .4s;
+}
+
+.to-photo_list-button-in-people:hover {
+    background: #27df30;
+    color: white;
+    cursor:pointer;
+}
+
+.to-photo_list-button-wrapper {
+    text-align: center;
+}
+
+.to-locations-button-in-people {
+    font-size: 60px;
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #27df30;
+    background: #ECECEC;
+    transition: .4s;
+}
+
+.to-locations-button-in-people:hover {
+    background: #27df30;
+    color: white;
+    cursor:pointer;
+}
+
+.to-locations-button-wrapper {
+    text-align: center;
+}
+
+.flex {
+    padding: 2.5% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
