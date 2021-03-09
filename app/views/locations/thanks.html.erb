@@ -5,13 +5,13 @@
 <div class="flex">
 
     <div class="to-photo_list-button-wrapper">
-        <%= button_to photo_list_path, method: :get, class: "to-photo_list-button" do %>
+        <%= button_to photo_list_path, method: :get, class: "to-photo_list-button-in-location" do %>
             <i class="fa fa-caret-right"></i> 投稿画像一覧へ
         <% end %>
     </div>
 
     <div class="to-locations-button-wrapper">
-        <%= button_to locations_path, method: :get, class: "to-locations-button" do %>
+        <%= button_to locations_path, method: :get, class: "to-locations-button-in-location" do %>
             <i class="fa fa-caret-right"></i> 続けて投稿する
         <% end %>
     </div>
