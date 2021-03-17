@@ -1,0 +1,232 @@
+find_executable: checking for brew... -------------------- no
+
+--------------------
+
+searching PATH for the ImageMagick library...have_library: checking for -lCORE_RL_magick_... -------------------- yes
+
+"x86_64-w64-mingw32-gcc -o conftest.exe -IC:/Ruby26-x64/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby26-x64/include/ruby-2.6.0/ruby/backward -IC:/Ruby26-x64/include/ruby-2.6.0 -I. -I"C:\Program Files\ImageMagick-6.9.2-Q16/include" -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LC:/Ruby26-x64/lib -L"C:\Program Files\ImageMagick-6.9.2-Q16/lib"     -lx64-msvcrt-ruby260  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return 0;
+8: }
+/* end */
+
+"x86_64-w64-mingw32-gcc -o conftest.exe -IC:/Ruby26-x64/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby26-x64/include/ruby-2.6.0/ruby/backward -IC:/Ruby26-x64/include/ruby-2.6.0 -I. -I"C:\Program Files\ImageMagick-6.9.2-Q16/include" -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LC:/Ruby26-x64/lib -L"C:\Program Files\ImageMagick-6.9.2-Q16/lib"     -lx64-msvcrt-ruby260 -lCORE_RL_magick_  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return 0;
+16: }
+17: 
+18: int t(void) { ; return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for -lX11... -------------------- no
+
+"x86_64-w64-mingw32-gcc -o conftest.exe -IC:/Ruby26-x64/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby26-x64/include/ruby-2.6.0/ruby/backward -IC:/Ruby26-x64/include/ruby-2.6.0 -I. -I"C:\Program Files\ImageMagick-6.9.2-Q16/include" -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LC:/Ruby26-x64/lib -L"C:\Program Files\ImageMagick-6.9.2-Q16/lib"    -lCORE_RL_magick_  -lx64-msvcrt-ruby260 -lX11 -lCORE_RL_magick_  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+C:/Ruby26-x64/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lX11
+collect2.exe: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return 0;
+16: }
+17: 
+18: int t(void) { ; return 0; }
+/* end */
+
+--------------------
+
+assert_minimum_ruby_version!: checking for Ruby version >= 2.3.0... -------------------- yes
+
+--------------------
+
+have_header: checking for sys/types.h... -------------------- yes
+
+"x86_64-w64-mingw32-gcc -E -IC:/Ruby26-x64/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby26-x64/include/ruby-2.6.0/ruby/backward -IC:/Ruby26-x64/include/ruby-2.6.0 -I. -I"C:\Program Files\ImageMagick-6.9.2-Q16/include" -O3 -fno-fast-math -fstack-protector-strong  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <sys/types.h>
+/* end */
+
+--------------------
+
+have_header: checking for magick/MagickCore.h... -------------------- yes
+
+"x86_64-w64-mingw32-gcc -E -IC:/Ruby26-x64/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby26-x64/include/ruby-2.6.0/ruby/backward -IC:/Ruby26-x64/include/ruby-2.6.0 -I. -I"C:\Program Files\ImageMagick-6.9.2-Q16/include" -O3 -fno-fast-math -fstack-protector-strong  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <magick/MagickCore.h>
+/* end */
+
+--------------------
+
+have_func: checking for snprintf() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,sys/types.h,magick/MagickCore.h... -------------------- yes
+
+"x86_64-w64-mingw32-gcc -o conftest.exe -IC:/Ruby26-x64/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby26-x64/include/ruby-2.6.0/ruby/backward -IC:/Ruby26-x64/include/ruby-2.6.0 -I. -I"C:\Program Files\ImageMagick-6.9.2-Q16/include" -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LC:/Ruby26-x64/lib -L"C:\Program Files\ImageMagick-6.9.2-Q16/lib"    -lCORE_RL_magick_  -lx64-msvcrt-ruby260 -lCORE_RL_magick_  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <assert.h>
+ 6: #include <ctype.h>
+ 7: #include <stdio.h>
+ 8: #include <stdlib.h>
+ 9: #include <math.h>
+10: #include <time.h>
+11: #include <sys/types.h>
+12: #include <magick/MagickCore.h>
+13: 
+14: /*top*/
+15: extern int t(void);
+16: int main(int argc, char **argv)
+17: {
+18:   if (argc > 1000000) {
+19:     int (* volatile tp)(void)=(int (*)(void))&t;
+20:     printf("%d", (*tp)());
+21:   }
+22: 
+23:   return 0;
+24: }
+25: int t(void) { void ((*volatile p)()); p = (void ((*)()))snprintf; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for GetImageChannelEntropy() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,sys/types.h,magick/MagickCore.h... -------------------- yes
+
+"x86_64-w64-mingw32-gcc -o conftest.exe -IC:/Ruby26-x64/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby26-x64/include/ruby-2.6.0/ruby/backward -IC:/Ruby26-x64/include/ruby-2.6.0 -I. -I"C:\Program Files\ImageMagick-6.9.2-Q16/include" -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LC:/Ruby26-x64/lib -L"C:\Program Files\ImageMagick-6.9.2-Q16/lib"    -lCORE_RL_magick_  -lx64-msvcrt-ruby260 -lCORE_RL_magick_  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <assert.h>
+ 6: #include <ctype.h>
+ 7: #include <stdio.h>
+ 8: #include <stdlib.h>
+ 9: #include <math.h>
+10: #include <time.h>
+11: #include <sys/types.h>
+12: #include <magick/MagickCore.h>
+13: 
+14: /*top*/
+15: extern int t(void);
+16: int main(int argc, char **argv)
+17: {
+18:   if (argc > 1000000) {
+19:     int (* volatile tp)(void)=(int (*)(void))&t;
+20:     printf("%d", (*tp)());
+21:   }
+22: 
+23:   return 0;
+24: }
+25: int t(void) { void ((*volatile p)()); p = (void ((*)()))GetImageChannelEntropy; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for SetImageGray() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,sys/types.h,magick/MagickCore.h... -------------------- yes
+
+"x86_64-w64-mingw32-gcc -o conftest.exe -IC:/Ruby26-x64/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby26-x64/include/ruby-2.6.0/ruby/backward -IC:/Ruby26-x64/include/ruby-2.6.0 -I. -I"C:\Program Files\ImageMagick-6.9.2-Q16/include" -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LC:/Ruby26-x64/lib -L"C:\Program Files\ImageMagick-6.9.2-Q16/lib"    -lCORE_RL_magick_  -lx64-msvcrt-ruby260 -lCORE_RL_magick_  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <assert.h>
+ 6: #include <ctype.h>
+ 7: #include <stdio.h>
+ 8: #include <stdlib.h>
+ 9: #include <math.h>
+10: #include <time.h>
+11: #include <sys/types.h>
+12: #include <magick/MagickCore.h>
+13: 
+14: /*top*/
+15: extern int t(void);
+16: int main(int argc, char **argv)
+17: {
+18:   if (argc > 1000000) {
+19:     int (* volatile tp)(void)=(int (*)(void))&t;
+20:     printf("%d", (*tp)());
+21:   }
+22: 
+23:   return 0;
+24: }
+25: int t(void) { void ((*volatile p)()); p = (void ((*)()))SetImageGray; return !p; }
+/* end */
+
+--------------------
+
+extconf.h is:
+/* begin */
+ 1: #ifndef EXTCONF_H
+ 2: #define EXTCONF_H
+ 3: #define HAVE_SYS_TYPES_H 1
+ 4: #define HAVE_MAGICK_MAGICKCORE_H 1
+ 5: #define HAVE_SNPRINTF 1
+ 6: #define HAVE_GETIMAGECHANNELENTROPY 1
+ 7: #define HAVE_SETIMAGEGRAY 1
+ 8: #define RUBY_VERSION_STRING ruby 2.6.6
+ 9: #define RMAGICK_VERSION_STRING RMagick 3.1.0
+10: #define IMAGEMAGICK_GREATER_THAN_EQUAL_6_8_9 1
+11: #endif
+/* end */
+
+
+
+======================================================================
+Thu 18 Mar 21 06:38:28
+This installation of RMagick 3.1.0 is configured for
+Ruby 2.6.6 (x64-mingw32) and ImageMagick 7.0.10
+======================================================================
+
+
+Configured compile options: {:magick_version=>"7.0.10", :local_libs=>"", :cflags=>"-O3 -fno-fast-math -fstack-protector-strong", :cppflags=>"-I\"C:\\Program Files\\ImageMagick-6.9.2-Q16/include\"", :ldflags=>"-L\"C:\\Program Files\\ImageMagick-6.9.2-Q16/lib\"", :defs=>[], :config_h=>"Makefile rmagick.h"}
