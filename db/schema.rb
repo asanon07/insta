@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2021_03_08_005237) do
 
-  create_table "locations", force: :cascade do |t|
+  create_table "locations", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "name"
     t.text "prefecture"
     t.text "municipalities"
@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 2021_03_08_005237) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "people", force: :cascade do |t|
+  create_table "people", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "name"
     t.integer "age"
     t.text "email"

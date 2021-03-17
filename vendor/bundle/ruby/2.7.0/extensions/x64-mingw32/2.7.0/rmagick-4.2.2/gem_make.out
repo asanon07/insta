@@ -1,0 +1,71 @@
+current directory: C:/Users/yasu/Desktop/insta/vendor/bundle/ruby/2.7.0/gems/rmagick-4.2.2/ext/RMagick
+C:/Ruby27-x64/bin/ruby.exe -I C:/Ruby27-x64/lib/ruby/2.7.0 -r ./siteconf20210317-13992-f4cduj.rb extconf.rb
+checking for Ruby version >= 2.3.0... yes
+checking for magick... yes
+checking for outdated ImageMagick version (<= 6.7.7)... no
+checking for x86_64-w64-mingw32-gcc... yes
+searching PATH for the ImageMagick library...
+checking for -lCORE_RL_MagickCore_... yes
+checking for __GNUC__... yes
+checking for MagickCore/MagickCore.h... yes
+checking for rb_gc_adjust_memory_usage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,sys/types.h,MagickCore/MagickCore.h... yes
+checking for posix_memalign() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,sys/types.h,MagickCore/MagickCore.h... no
+checking for malloc_usable_size() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,sys/types.h,MagickCore/MagickCore.h... no
+checking for malloc_size() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,sys/types.h,MagickCore/MagickCore.h... no
+checking for _aligned_msize() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,sys/types.h,MagickCore/MagickCore.h... yes
+checking for GetImageChannelEntropy() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,sys/types.h,MagickCore/MagickCore.h... no
+checking for SetImageGray() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,sys/types.h,MagickCore/MagickCore.h... yes
+checking for SetMagickAlignedMemoryMethods() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,sys/types.h,MagickCore/MagickCore.h... yes
+checking for malloc.h... yes
+creating extconf.h
+creating Makefile
+======================================================================
+Wed 17 Mar 21 03:24:06
+This installation of RMagick 4.2.2 is configured for
+Ruby 2.7.2 (x64-mingw32) and ImageMagick 7.0.9
+======================================================================
+
+
+Configured compile options: {:magick_version=>"7.0.9", :local_libs=>"", :cflags=>"-O3 -fno-fast-math -fstack-protector-strong -std=gnu99", :cppflags=>"-I\"C:\\Program Files\\ImageMagick-7.0.11-Q16-HDRI/include\"", :ldflags=>"-L\"C:\\Program Files\\ImageMagick-7.0.11-Q16-HDRI/lib\" -lucrt", :defs=>[], :config_h=>"Makefile"}
+
+current directory: C:/Users/yasu/Desktop/insta/vendor/bundle/ruby/2.7.0/gems/rmagick-4.2.2/ext/RMagick
+make "DESTDIR=" clean
+bash.exe: warning: could not find /tmp, please create!
+
+current directory: C:/Users/yasu/Desktop/insta/vendor/bundle/ruby/2.7.0/gems/rmagick-4.2.2/ext/RMagick
+make "DESTDIR="
+generating RMagick2-x64-mingw32.def
+bash.exe: warning: could not find /tmp, please create!
+compiling rmagick.c
+bash.exe: warning: could not find /tmp, please create!
+compiling rmdraw.c
+bash.exe: warning: could not find /tmp, please create!
+compiling rmenum.c
+bash.exe: warning: could not find /tmp, please create!
+compiling rmfill.c
+bash.exe: warning: could not find /tmp, please create!
+compiling rmilist.c
+bash.exe: warning: could not find /tmp, please create!
+compiling rmimage.c
+bash.exe: warning: could not find /tmp, please create!
+compiling rminfo.c
+bash.exe: warning: could not find /tmp, please create!
+compiling rmkinfo.c
+bash.exe: warning: could not find /tmp, please create!
+compiling rmmain.c
+bash.exe: warning: could not find /tmp, please create!
+compiling rmmontage.c
+bash.exe: warning: could not find /tmp, please create!
+compiling rmpixel.c
+bash.exe: warning: could not find /tmp, please create!
+compiling rmstruct.c
+bash.exe: warning: could not find /tmp, please create!
+compiling rmutil.c
+bash.exe: warning: could not find /tmp, please create!
+linking shared-object RMagick2.so
+bash.exe: warning: could not find /tmp, please create!
+
+current directory: C:/Users/yasu/Desktop/insta/vendor/bundle/ruby/2.7.0/gems/rmagick-4.2.2/ext/RMagick
+make "DESTDIR=" install
+bash.exe: warning: could not find /tmp, please create!
+/usr/bin/install -c -m 0755 RMagick2.so ./.gem.20210317-13992-1g5i1if

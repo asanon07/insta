@@ -1,0 +1,19 @@
+current directory: C:/Users/yasu/Desktop/insta/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.5.1/ext/bootsnap
+C:/Ruby27-x64/bin/ruby.exe -I C:/Ruby27-x64/lib/ruby/2.7.0 -r ./siteconf20210317-13992-og3dt5.rb extconf.rb
+creating Makefile
+
+current directory: C:/Users/yasu/Desktop/insta/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.5.1/ext/bootsnap
+make "DESTDIR=" clean
+bash.exe: warning: could not find /tmp, please create!
+
+current directory: C:/Users/yasu/Desktop/insta/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.5.1/ext/bootsnap
+make "DESTDIR="
+generating bootsnap-x64-mingw32.def
+bash.exe: warning: could not find /tmp, please create!
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: C:/Users/yasu/Desktop/insta/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.5.1/ext/bootsnap
+make "DESTDIR=" install
+bash.exe: warning: could not find /tmp, please create!
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20210317-13992-1gb25b9/bootsnap
