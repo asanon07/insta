@@ -82,7 +82,8 @@ gem "carrierwave"
 
 gem "mini_magick"
 
-gem "rmagick"
+# gem "rmagick"
+gem 'rmagick', "= 3.1.0"
 
 gem "rails-i18n"
 
