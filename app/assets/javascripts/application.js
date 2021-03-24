@@ -17,6 +17,7 @@
 //= require turbolinks
 //= require_tree .
 
+document.addEventListener("turbolinks:load", function () {
 $(document).ready(function () {
     $("#images").skippr({
       // スライドショーの変化 ("fade" or "slide")
@@ -41,3 +42,4 @@ $(document).ready(function () {
       hidePrevious : false
     });
   });
+});
