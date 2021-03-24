@@ -14,10 +14,11 @@
  *= require_self
  */
 
+
  /* 高さを指定することにより画像が表示される */
 #box{
-    height: 600px;
-    margin-top: 200px;
+    height: 500px;
+    margin-top: 120px;
   }
   .image1 {
     background-image: image-url("fot0016-013.jpg");
@@ -39,3 +40,4 @@
     width: 50%;
     height: 50%;
   }
+
