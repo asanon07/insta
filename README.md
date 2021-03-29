@@ -15,7 +15,7 @@
 
 * ruby 2.6.6
 * rails 5.2.4.4
-* DB Mysql 8.0.23
+* DB MySQL 8.0.23
 * デプロイ先 AWS EC2
 * スライドショー skipper
 * 画像加工 ImageMagick 7.0.11-Q16-HDRI, Rmagick 4.2.2
