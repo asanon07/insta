@@ -8,6 +8,13 @@ ja:
         age: 年齢
         email: メールアドレス
         password_digest: パスワード
+      location:
+        name: タイトル
+        prefecture: 県
+        municipalities: 市町村
+        address: 番地丁目
+        photo: 写真
+        photo_description: 説明文
     errors:
       messages:
         record_invalid: 'バリデーションに失敗しました: %{errors}'
