@@ -5,8 +5,19 @@ class LocationsController < ApplicationController
 
   def create
     @location = Location.new(permit_params)
-    @location.save!
-    redirect_to action: "thanks"
+    if @location.save
+      redirect_to action: "thanks"
+    else
+      re = ""
+      @location.errors.messages.each do |key, vals|
+        vals.each do |val|
+          re += '<span style="color:red">' + Location.human_attribute_name(key).to_s +
+                "</span> " + val + "<br>"
+        end
+      end
+      @msg = re.html_safe
+      render :action => "show"
+    end
   end
 
   def thanks
