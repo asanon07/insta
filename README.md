@@ -1,6 +1,6 @@
 # README
 ■サイトURL
-http://18.177.192.196/
+https://www.insta-baerun.com/
 
 ■概要  
 インスタ映えするスポットを自由に投稿、閲覧できるWebアプリです.
