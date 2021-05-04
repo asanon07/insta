@@ -46,4 +46,7 @@ Rails.application.routes.draw do
 
   get "details/slide_details"
   get "details", to: "details#slide_details"
+
+  get "about/about_write"
+  get "about", to: "about#about_write"
 end
