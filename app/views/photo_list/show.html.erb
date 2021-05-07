@@ -2,7 +2,7 @@
 
 <div class="image">
   <ul>
-    <li>
+    <li class="photo_li">
       <% @locations.each do |location| %>
       <%= link_to image_tag(location.photo.url, width: "800px", height: "600px"), "/photo_details/#{location.id}" %>
       <% end %>
