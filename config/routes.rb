@@ -23,6 +23,10 @@ Rails.application.routes.draw do
   get "/photo_list/show"
   get "/photo_list", to: "photo_list#show"
 
+  resources :photo_list do
+    get :search, on: :collection
+  end
+
   get "/photo_details/:id" => "photo_details#show"
 
   get "/locations", to: "locations#show"
